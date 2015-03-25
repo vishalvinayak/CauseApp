@@ -1,0 +1,7 @@
+*.log
+build/
+temp-*
+*temp
+*tmp
+*.swp
+*.swap
