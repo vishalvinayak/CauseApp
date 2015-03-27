@@ -13,6 +13,7 @@ mountFolder = (connect, dir) ->
 # use this if you want to recursively match all subfolders:
 # 'test/spec/**/*.js'
 module.exports = (grunt) ->
+    var hostname = grunt.option('hostname') || 'localhost';
     require("load-grunt-tasks") grunt
     require("time-grunt") grunt
     
@@ -63,7 +64,7 @@ module.exports = (grunt) ->
                 port: 9000
                 
                 # Change this to '0.0.0.0' to access the server from outside.
-                hostname: "localhost"
+                hostname: hostname 
 
             livereload:
                 options:
