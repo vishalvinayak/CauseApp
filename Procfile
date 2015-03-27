@@ -1,1 +1,1 @@
-web: static 
+web: coffee Gruntfile.coffee 
